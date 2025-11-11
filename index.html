@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akiurara Cafe</title>
+</head>
+<body>
+  <header>
+    <img src="./images/ Header Background.gif" alt="Cafe Background" />
+    <h1>Akiurara Cafe</h1>
+    <nav>
+      <ul>
+        <li><a href="menu">Menu</a></li>
+        <li><a href="place_order">Place your order</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="Menu">
+      <article title="ice-latte">
+        <img />
+        <h2>Ice Latte</h2>
+        <p>Description</p>
+      </article>
+      <article title="bubble-tea">
+        <img />
+        <h2>Bubble Tea</h2>
+        <p>Bubble Tea</p>
+      </article>
+      <article title="blue-berry-refresh">
+        <img />
+        <h2>Blue Berry Refresh</h2>
+        <p>Description</p>
+      </article>
+      <article title="strawberry-cake">
+        <img />
+        <h2>Strawberry Cake</h2>
+        <p>Description</p>
+      </article>
+      <article title="blue-berry-cake">
+        <img />
+        <h2>Blue Berry Cake</h2>
+        <p>Description</p>
+      </article>
+      <article title="chocolate-pie">
+        <img />
+        <h2>Chocolate Pie</h2>
+        <p>Description</p>
+      </article>
+    </section>
+    <section class="place-order">
+      <h2>Place your Order</h2>
+      <article title = "order-form">
+        <form action="/submit_order" method="post">
+
+          <div class = "dishes">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+          <h4>Drinks and Desserts:</h4>
+          <label for="ice-latte-quantity">Ice Latte:</label>
+          <input type="number" id="ice-latte-quantity" name="ice-latte-quantity" min="0" value="0"/><br />
+          <label for="bubble-tea-quantity">Bubble Tea:</label>
+          <input type="number" id="bubble-tea-quantity" name="bubble-tea-quantity" min="0" value="0"/><br />
+          <label for="blue-berry-refresh-quantity">Blue Berry Refresh:</label>
+          <input type="number" id="blue-berry-refresh-quantity" name="blue-berry-refresh-quantity" min="0" value="0"/><br />
+          <label for="strawberry-cake-quantity">Strawberry Cake:</label>
+          <input type="number" id="strawberry-cake-quantity" name="strawberry-cake-quantity" min="0" value="0"/><br />
+          <label for="blue-berry-cake-quantity">Blue Berry Cake:</label>
+          <input type="number" id="blue-berry-cake-quantity" name="blue-berry-cake-quantity" min="0" value="0"/><br />
+          <label for="chocolate-pie-quantity">Chocolate Pie:</label>
+          <input type="number" id="chocolate-pie-quantity" name="chocolate-pie-quantity" min="0" value="0"/><br />
+          </div>
+
+          <div class="add-ons">
+            <h4>Add-ons: </h4>
+            <label for="extra-ice">Extra Ice</label>
+            <input type="checkbox" id="extra-ice" name="extra-ice" /><br />
+            <label for="boba-pearls">Boba Pearls</label>
+            <input type="checkbox" id="boba-pearls" name="boba-pearls" /><br />
+            <label for="whipped-cream">Whipped Cream</label>
+            <input type="checkbox" id="whipped-cream" name="whipped-cream" /><br /> 
+            <label for="extra-sugar" >Extra Sugar</label>
+            <input type="checkbox" id="extra-sugar" name="extra-sugar" /><br />
+          </div>
+        
+          <input type="submit" value="Go to Checkout!" />
+        </form>
+
+      </article>
+  </main>
+  <footer>
+    <p class="credits">Made with love by @sunzcy</p>
+  </footer>
+</body>
+<footer>
+
+</footer>
+</html>
