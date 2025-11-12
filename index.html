@@ -4,60 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akiurara Cafe</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header>
-    <img src="./images/ Header Background.gif" alt="Cafe Background" />
+    <img src="./images/Cafe Header.jpg" alt="Cafe Background" />
     <h1>Akiurara Cafe</h1>
     <nav>
       <ul>
-        <li><a href="menu">Menu</a></li>
-        <li><a href="place_order">Place your order</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#place-order">Place your order</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="Menu">
-      <article title="ice-latte">
-        <img />
-        <h2>Ice Latte</h2>
-        <p>Description</p>
-      </article>
-      <article title="bubble-tea">
-        <img />
-        <h2>Bubble Tea</h2>
-        <p>Bubble Tea</p>
-      </article>
-      <article title="blue-berry-refresh">
-        <img />
-        <h2>Blue Berry Refresh</h2>
-        <p>Description</p>
-      </article>
+    <section class="menu" id="menu">
+      <h2>Menu</h2>
+      <div class="drinks">
+        <article title="ice-latte">
+          <img src="./images/Ice Latte.jpg"/>
+          <h2>Ice Latte</h2>
+          <p>Smooth espresso poured over ice and creamy milk for the perfect chill pick-me-up.</p>
+        </article>
+        <article title="bubble-tea">
+          <img src="./images/Bubble Tea.jpg"/>
+          <h2>Bubble Tea</h2>
+          <p>Sweet milk tea with chewy tapioca pearls. A fun and refreshing classic.</p>
+        </article>
+        <article title="blue-berry-refresh">
+          <img src="./images/Blue Berry Refresh.jpg"/>
+          <h2>Blue Berry Refresh</h2>
+          <p>Sweet milk tea with chewy tapioca pearls — a fun and refreshing classic.</p>
+        </article>
+      </div>
+      <div class="desserts">
       <article title="strawberry-cake">
-        <img />
+        <img src="./images/Strawberry Cake.jpg"/>
         <h2>Strawberry Cake</h2>
-        <p>Description</p>
+        <p>Soft sponge layered with whipped cream and topped with fresh strawberries.</p>
       </article>
       <article title="blue-berry-cake">
-        <img />
+        <img src="./images/Blue berry cake.jpg"/>
         <h2>Blue Berry Cake</h2>
-        <p>Description</p>
+        <p>Fluffy vanilla cake filled with blueberry cream and juicy berries.</p>
       </article>
       <article title="chocolate-pie">
-        <img />
+        <img src="./images/Chocolate Pie.jpg"/>
         <h2>Chocolate Pie</h2>
-        <p>Description</p>
+        <p>Rich, velvety chocolate filling in a buttery crust. A dessert lover dream.</p>
       </article>
+      </div>
     </section>
-    <section class="place-order">
+    <section class="place-order" id="place-order">
       <h2>Place your Order</h2>
       <article title = "order-form">
         <form action="/submit_order" method="post">
 
           <div class = "dishes">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br />
-          <h4>Drinks and Desserts:</h4>
+          <input type="text" class="name" name="name" required /><br />
+          <h3>Drinks and Desserts:</h3>
           <label for="ice-latte-quantity">Ice Latte:</label>
           <input type="number" id="ice-latte-quantity" name="ice-latte-quantity" min="0" value="0"/><br />
           <label for="bubble-tea-quantity">Bubble Tea:</label>
@@ -73,7 +79,7 @@
           </div>
 
           <div class="add-ons">
-            <h4>Add-ons: </h4>
+            <h3>Add-ons: </h3>
             <label for="extra-ice">Extra Ice</label>
             <input type="checkbox" id="extra-ice" name="extra-ice" /><br />
             <label for="boba-pearls">Boba Pearls</label>
@@ -83,8 +89,12 @@
             <label for="extra-sugar" >Extra Sugar</label>
             <input type="checkbox" id="extra-sugar" name="extra-sugar" /><br />
           </div>
+          <div class="special-instructions">
+            <h3>Special Instructions:</h3>
+            <input type="text" class="special-instructions" name="special-instructions" /><br />
+          </div>
         
-          <input type="submit" value="Go to Checkout!" />
+          <input class="submit" type="submit" value="Go to Checkout!" />
         </form>
 
       </article>
